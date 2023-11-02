@@ -63,7 +63,7 @@ namespace Ejercicios_Busqueda_LinyBin
 
         public void ejercicio3()
         {
-            int[] arreglo = new int[] { 11, 21, 2, 31, 56, 61, 27, 85, 19, 13, 17};
+            int[] arreglo = new int[] { 1,2,3,4,5,6,7,8,9,10};
             int posicion = -1;
             for(int i = 0; i < arreglo.Length; i++)
             {
@@ -85,23 +85,26 @@ namespace Ejercicios_Busqueda_LinyBin
         }
 
 
-            //no terminado
+           
         public void ejercicio4()
         {
-            int[] arreglo = new int[] { 25, 5, 8, 7, 38, 9, 13, 17, 19, 50 };
-            int[] arreglo2 = new int[4];
-            int item = -1;
+            int[] arreglo = new int[] { 1,2,3,4,5,6,7,8,9,10};
+            int[] arreglo2 = new int[10];
+            int item = 0;
             for (int i = 0;i < arreglo.Length;i++)
             { 
                 if (arreglo[i] % 2 == 0)
                 {
-                    arreglo[i] = item;
-                    item = -1;
+                    arreglo2[item] = i;
+                    item ++;
                 }
             }
-            if(item > -1)
+            if(item > 0)
             {
-                Console.WriteLine("El numero se encuentra en la posicion " + item);
+                for(int i = 0;i < item; i++)
+                {
+                    Console.WriteLine("El numero se encuentra en la posicion " + arreglo2[i]);
+                }               
             }
             else 
             {

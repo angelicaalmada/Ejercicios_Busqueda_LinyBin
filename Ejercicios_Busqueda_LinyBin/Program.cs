@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        EjercicioBinario eje = new EjercicioBinario();
-        eje.ejercicio1();
+        EjercicioLineal eje = new EjercicioLineal();
+        eje.ejercicio4();
     }
 }
